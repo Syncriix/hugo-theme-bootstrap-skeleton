@@ -100,45 +100,45 @@ echo "YOUR_PUBLIC_KEY_HERE" > ~/.ssh/authorized_keys
 ```
 > **Warning:** Copying your private key around is like sharing your deepest metaphysical secrets - generally inadvisable and potentially traumatic. Keep your private key as private as your opinions about French software.
 
-> [!CAUTION]-🚨 So You Generated Keys on the Server (Click here to feel bad about your life choices)
-> ### Key Generation: A Tale of What Not To Do
-> If you've committed the cardinal sin of generating your keys on Abraxas itself (we're not judging... much), here's how to retrieve them without further compromising your philosophical integrity:
-> ```bash
-> # On Abraxas (where you shouldn't have generated the keys in the first place)
-> cat ~/.ssh/xqis_ed25519
-> # Copy this output to your local machine, trying not to think about all the systems
-> # potentially logging your private key as it travels across the internet
-> # On your local machine
-> echo "YOUR_COPIED_PRIVATE_KEY" > ~/.ssh/xqis_ed25519
-> chmod 600 ~/.ssh/xqis_ed25519
-> ```
-> > **Note of Shame:** This is the digital equivalent of writing your deepest secrets on a postcard and sending it through the postal service. Sure, it might work, but you'll never feel clean again. Please  generate your keys locally next time - even Void judges you for this.
-> > **Security Advisory:** After retrieving your key, it's highly recommended to:
-> 1. Generate a new key pair locally
-> 2. Update all servers with the new public key
-> 3. Delete the old key pair
-> 4. Spend some time contemplating your life choices
-> 5. Never speak of this incident again
-> ### Why Local Key Generation is Sacred Law
-> Picture this: Your server, Abraxas, is like a busy cosmic marketplace. Every process, every log, every system utility is a potential merchant of information. When you generate keys there:
-> 1. **The Memory Issue**: Your private key exists in server RAM
->    - System memory can be dumped
->    - Swap space might contain your key
->    - Even after reboot, fragments might persist like metaphysical echoes
-> 2. **The Log Labyrinth**:
->    - System processes might log key generation
->    - Your key could be captured in crash dumps
->    - Backup systems might archive it
->    - That one weird systemd service you forgot about might decide to "help" by preserving it
-> 3. **The Network Nightmare**:
->    - When you copy the private key back to your local machine, it travels through:
->      - Your server's network stack
->      - Your hosting provider's infrastructure
->      - Potentially dozens of routers
->      - Your local ISP
->      - That coffee shop WiFi you're using because you're "working remotely"
->    Each of these is an opportunity for your key to be intercepted, logged, or cached
-> > **Philosophical Truth**: Just as Pleroma represents fullness and Void represents emptiness, your > private key should represent absolute privacy. Generating it on a server is like hosting a secret > meditation session in a public park while livestreaming it on TikTok.
+>[!CAUTION]-🚨 So You Generated Keys on the Server (Click here to feel bad about your life choices)
+>### Key Generation: A Tale of What Not To Do
+>If you've committed the cardinal sin of generating your keys on Abraxas itself (we're not judging... much), here's how to retrieve them without further compromising your philosophical integrity:
+>```bash
+># On Abraxas (where you shouldn't have generated the keys in the first place)
+>cat ~/.ssh/xqis_ed25519
+># Copy this output to your local machine, trying not to think about all the systems
+># potentially logging your private key as it travels across the internet
+># On your local machine
+>echo "YOUR_COPIED_PRIVATE_KEY" > ~/.ssh/xqis_ed25519
+>chmod 600 ~/.ssh/xqis_ed25519
+>```
+>> **Note of Shame:** This is the digital equivalent of writing your deepest secrets on a postcard and sending it through the postal service. Sure, it might work, but you'll never feel clean again. Please  generate your keys locally next time - even Void judges you for this.
+>> **Security Advisory:** After retrieving your key, it's highly recommended to:
+>1. Generate a new key pair locally
+>2. Update all servers with the new public key
+>3. Delete the old key pair
+>4. Spend some time contemplating your life choices
+>5. Never speak of this incident again
+>### Why Local Key Generation is Sacred Law
+>Picture this: Your server, Abraxas, is like a busy cosmic marketplace. Every process, every log, every system utility is a potential merchant of information. When you generate keys there:
+>1. **The Memory Issue**: Your private key exists in server RAM
+>   - System memory can be dumped
+>   - Swap space might contain your key
+>   - Even after reboot, fragments might persist like metaphysical echoes
+>2. **The Log Labyrinth**:
+>   - System processes might log key generation
+>   - Your key could be captured in crash dumps
+>   - Backup systems might archive it
+>   - That one weird systemd service you forgot about might decide to "help" by preserving it
+>3. **The Network Nightmare**:
+>   - When you copy the private key back to your local machine, it travels through:
+>     - Your server's network stack
+>     - Your hosting provider's infrastructure
+>     - Potentially dozens of routers
+>     - Your local ISP
+>     - That coffee shop WiFi you're using because you're "working remotely"
+>   Each of these is an opportunity for your key to be intercepted, logged, or cached
+>> **Philosophical Truth**: Just as Pleroma represents fullness and Void represents emptiness, your > private key should represent absolute privacy. Generating it on a server is like hosting a secret > meditation session in a public park while livestreaming it on TikTok.
 
 ### Initial Server Hardening Steps
 Because even metaphysical concepts need protection from script kiddies:
