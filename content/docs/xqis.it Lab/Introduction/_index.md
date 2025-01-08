@@ -58,6 +58,23 @@ Our infrastructure mirrors the cosmic architecture of existence itself, because 
   - *"In its nothingness lies our salvation when Pleroma falls silent"*
 > **Note to future maintainers:** Yes, we named our production infrastructure after fundamental metaphysical concepts. No, we're not sorry. If you're reading this during an outage, remember that downtime, like existence itself, is temporary and ultimately meaningless in the grand cosmic scheme. Also, check the logs in /var/log/containers/. If Pleroma goes down, failover to Void will occur automatically - a perfect metaphor for the cosmic dance of being and nothingness. Also, please make sure your SSL certificates are up to date.
 
+## Server Specifications: Because Size Matters (Despite What They Say)
+When choosing your server specifications, remember that we're building a philosophical construct as much as a technical one. Our chosen configuration balances cosmic consciousness with mundane practicality:
+### The Sacred Specifications
+- **CPU**: 1 core (Monism in computing form)
+- **RAM**: 2 GB (The duality of memory management)
+- **Storage**: 20 GB (The vertex of minimal viable existence)
+- **OS**: Rocky Linux 9 64-bit (Stability without French influence)
+- **Carbon Footprint**: 0.192 kg/year (Because even metaphysical servers should be environmentally conscious)
+> **Note:** While one might argue that a single CPU core limits our parallel processing capabilities, remember that Abraxas themselves manifested as a singular entity. If it's good enough for a supreme cosmic being, it's good enough for our ingress controller.
+
+### Why These Specifications?
+- The single CPU represents our commitment to minimalism and the rejection of excessive resource consumption
+- 2GB RAM proves sufficient for our needs while keeping costs grounded in material reality
+- 20GB storage allows for adequate log retention without hoarding digital karma
+- Rocky Linux 9 because... well, we've already documented our feelings about French vanilla
+> **Infrastructure Wisdom:** When your server costs less than your monthly coffee budget, you're either doing something very right or very wrong. In our case, we choose to believe it's enlightenment through minimalism rather than poor capacity planning.
+
 ## Universal Server Setup
 > Because Some Things Are True Regardless of Your Cloud Provider's Existential State
 ### SSH Key Generation
@@ -73,3 +90,101 @@ Because even metaphysical concepts need protection from script kiddies:
 sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 # Disable root login - because even Abraxas needs boundaries
 sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
+
+## Hardening Your Metaphysical Construct
+Because even cosmic entities need protection from script kiddies and state-sponsored actors.
+### User Management: The First Circle of Defense
+```bash
+# Create a mortal vessel for your administrative tasks
+useradd -m -s /bin/bash admin
+usermod -aG wheel admin
+# Strengthen sudo with philosophical contemplation time
+echo "Defaults authenticate" >> /etc/sudoers.d/timeout
+echo "Defaults timestamp_timeout=5" >> /etc/sudoers.d/timeout
+# Remove the ability to use su - root, because absolute power corrupts absolutely
+passwd -l root
+```
+### SSH Hardening: The Gates to Your Digital Realm
+```bash
+# Create the sacred structure for SSH keys
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+# Configure SSHd with the wisdom of the ages
+cat << EOF > /etc/ssh/sshd_config.d/hardening.conf
+# Protocol 2 only - because legacy is another word for vulnerability
+Protocol 2
+# Authentication settings
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+AuthenticationMethods publickey
+MaxAuthTries 3
+# Session settings
+ClientAliveInterval 300
+ClientAliveCountMax 2
+LoginGraceTime 30
+MaxStartups 10:30:60
+MaxSessions 4
+# Disable features we don't need
+X11Forwarding no
+AllowAgentForwarding no
+AllowTcpForwarding no
+PermitTunnel no
+# Logging
+LogLevel VERBOSE
+EOF
+systemctl restart sshd
+```
+### Firewall Configuration: Because Good Fences Make Good Neighbors
+```bash
+# Install and enable firewall (if not already present)
+dnf install -y firewalld
+systemctl enable --now firewalld
+# Configure the barriers between realms
+firewall-cmd --permanent --add-service=ssh
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+# If you need custom ports, add them like this:
+# firewall-cmd --permanent --add-port=PORT/tcp
+# Apply the new reality
+firewall-cmd --reload
+```
+### System Hardening: The Foundation of Security
+```bash
+# Update the system to its latest incarnation
+dnf update -y
+# Install essential security tools
+dnf install -y fail2ban vim-enhanced tmux
+# Configure fail2ban to protect SSH
+cat << EOF > /etc/fail2ban/jail.local
+[sshd]
+enabled = true
+bantime = 3600
+findtime = 600
+maxretry = 3
+EOF
+systemctl enable --now fail2ban
+# Secure shared memory
+echo "tmpfs /run/shm tmpfs defaults,noexec,nosuid 0 0" >> /etc/fstab
+# Disable unused filesystems
+cat << EOF > /etc/modprobe.d/disable-filesystems.conf
+install cramfs /bin/false
+install freevxfs /bin/false
+install jffs2 /bin/false
+install hfs /bin/false
+install hfsplus /bin/false
+install squashfs /bin/false
+EOF
+```
+> **Note:** While these settings provide a solid foundation for security, remember that like the eternal dance between Pleroma and Void, security is not a state but a process. Regular audits and updates are as essential as daily meditation.
+### SELinux: Embrace the Enforcing
+```bash
+# Check current status
+sestatus
+# If not already enforcing
+setenforce 1
+sed -i 's/SELINUX=permissive/SELINUX=enforcing/' /etc/selinux/config
+```
+> **Philosophical Note:** Unlike some who choose to disable SELinux out of convenience, we embrace its complexity as a metaphor for the necessary boundaries in life. Yes, it might occasionally prevent things from working, but so does the fundamental structure of reality.
