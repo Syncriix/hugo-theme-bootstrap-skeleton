@@ -90,7 +90,7 @@ Because even metaphysical concepts need protection from script kiddies:
 sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 # Disable root login - because even Abraxas needs boundaries
 sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
-
+```
 ## Hardening Your Metaphysical Construct
 Because even cosmic entities need protection from script kiddies and state-sponsored actors.
 ### User Management: The First Circle of Defense
