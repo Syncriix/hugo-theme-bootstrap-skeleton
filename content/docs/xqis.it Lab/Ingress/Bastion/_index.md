@@ -1,6 +1,6 @@
 +++
 title = "Jumpgate/Bastion"
-linkTitle = "Bastion"
+linkTitle = "Jumpgate Bastion"
 linkTitleIcon = '<i class="fas fa-server fa-fw"></i>'
 toc = true
 reward = true
@@ -9,3 +9,7 @@ series = [
 ]
 authors = ["Syncriix"]
 +++
+
+The Teleport Jumpgate Bastion
+
+#TODO Describe Setup in Detail

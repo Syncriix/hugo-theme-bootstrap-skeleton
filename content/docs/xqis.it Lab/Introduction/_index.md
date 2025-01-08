@@ -34,3 +34,9 @@ Our setup is a delicate dance of servers, each playing a crucial role in the gra
 - Recap of key points
 - Invitation for readers to follow along
 - Teaser for upcoming posts and projects
+
+## Distro
+In the search for the perfect foundation for our K3s cluster, Ubuntu was swiftly dismissed due to its notorious privacy-invading tendencies - because who needs Canonical knowing when you're making a sandwich? Debian, with its peculiar flavor that sits somewhere between 'bland corporate meeting coffee' and 'lukewarm technical compromise,' didn't spark joy either. Salvation arrived in the form of Rocky Linux and AlmaLinux, the spiritual successors to CentOS. The choice between them was, as our technical analysis revealed, akin to choosing between vanilla and French vanilla ice cream. After a rigorous decision-making process that lasted approximately 30 seconds and concluded with an emphatic denouncement of all things French, Rocky Linux emerged as our champion - bringing enterprise-grade stability without the corporate bloat. The fact that AlmaLinux has nothing to do with France was deemed entirely irrelevant to this architectural decision.
+
+> **Note:** This documentation serves as a reminder that while technical decisions in the field often stem from dubious reasoning ('Fuck the French'), the resulting infrastructure can still be rock-solid. Much like how the internet itself runs on a combination of caffeine, Stack Overflow copy-paste, and spite, our K3s cluster shall stand as a testament to the time-honored tradition of making enterprise-grade architectural choices based on completely irrelevant cultural biases. Future maintainers of this system should take comfort in knowing that at least our prejudices were properly documented.
+
