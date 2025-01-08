@@ -129,7 +129,7 @@ echo "YOUR_PUBLIC_KEY_HERE" > ~/.ssh/authorized_keys
 
 > **Warning:** Copying your private key around is like sharing your deepest metaphysical secrets - generally inadvisable and potentially traumatic. Keep your private key as private as your opinions about French software.
 
-{{< details summary="🚨 So You Generated Keys on the Server (Click here to feel bad about your life choices)" >}}
+<details> <summary>🚨 So You Generated Keys on the Server (Click here to feel bad about your life choices)"</details>
 ### Key Generation: A Tale of What Not To Do
 If you've committed the cardinal sin of generating your keys on Abraxas itself (we're not judging... much), here's how to retrieve them without further compromising your philosophical integrity:
 ```bash
@@ -168,7 +168,7 @@ Picture this: Your server, Abraxas, is like a busy cosmic marketplace. Every pro
      - That coffee shop WiFi you're using because you're "working remotely"
    Each of these is an opportunity for your key to be intercepted, logged, or cached
 > **Philosophical Truth**: Just as Pleroma represents fullness and Void represents emptiness, your private key should represent absolute privacy. Generating it on a server is like hosting a secret meditation session in a public park while livestreaming it on TikTok.
-{{< /details >}}
+</details>
 
 ### Initial Server Hardening Steps
 
