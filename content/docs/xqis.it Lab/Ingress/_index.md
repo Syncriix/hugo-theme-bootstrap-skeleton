@@ -1,8 +1,7 @@
 +++
 title = "Ingress Server"
-linkTitle = "Ingress"
-linkTitleIcon = '<i class="fas fa-server fa-fw"></i>'
-navWeight = 990
+linkTitle = "Ingress Server"
+navWeight = 1
 toc = true
 reward = true
 series = [
@@ -10,3 +9,4 @@ series = [
 ]
 authors = ["Syncriix"]
 +++
+a
