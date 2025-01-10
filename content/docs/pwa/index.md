@@ -5,6 +5,7 @@ linkTitleIcon = '<i class="fas fa-th-large fa-fw text-warning"></i>'
 date = 2021-12-03T19:39:01+08:00
 featured = false
 comment = true
+draft = true
 toc = true
 reward = true
 categories = [

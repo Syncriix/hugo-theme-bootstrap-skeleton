@@ -1,5 +1,6 @@
 +++
 title = "Configuration"
+draft = true
 linkTitleIcon = '<i class="fas fa-cog fa-fw"></i>'
 navWeight = 980
 [menu.footer]

@@ -3,6 +3,7 @@ title = "Get Involved"
 linkTitleIcon = '<i class="fas fa-handshake fa-fw"></i>'
 date = 2021-11-27T19:54:29+08:00
 comment = true
+draft = true
 toc = true
 reward = true
 categories = [

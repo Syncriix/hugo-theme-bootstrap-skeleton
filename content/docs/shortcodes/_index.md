@@ -1,5 +1,6 @@
 +++
 title = "Shortcode"
+draft = true
 aliases = [
   "/en/posts/shortcodes"
 ]
