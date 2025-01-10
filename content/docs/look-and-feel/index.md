@@ -5,6 +5,7 @@ date = 2021-12-03T19:42:57+08:00
 featured = false
 comment = true
 toc = true
+draft = true
 reward = true
 pinned = true
 pinnedWeight = 3

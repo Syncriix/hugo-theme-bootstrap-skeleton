@@ -3,6 +3,7 @@ title = "Funding Widget"
 date = 2023-01-29T19:44:19+08:00
 featured = false
 comment = true
+draft = true
 toc = true
 categories = [
   "Widget"

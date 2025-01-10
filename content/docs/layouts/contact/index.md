@@ -4,6 +4,7 @@ date = 2021-11-30T23:56:00+08:00
 featured = false
 comment = true
 toc = true
+draft = true
 reward = true
 categories = [
   "Contact Form"

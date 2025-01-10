@@ -6,6 +6,7 @@ featured = true
 comment = true
 toc = true
 reward = true
+draft = true
 pinned = true
 categories = [
 ]

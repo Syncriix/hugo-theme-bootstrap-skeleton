@@ -3,6 +3,7 @@ title = "Gallery Shortcode"
 date = "2022-03-25"
 description = "A detailed description of Gallery shortcode"
 featured = false
+draft = true
 categories = [
   "Shortcode"
 ]

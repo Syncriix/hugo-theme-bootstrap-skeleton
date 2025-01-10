@@ -1,7 +1,7 @@
 +++
 title = "Exquisite Laboratories"
 linkTitle = "xqis.it Lab"
-linkTitleIcon = '<i class="fas fa-server fa-fw"></i>'
+linkTitleIcon = '<i class="fas fa-cog fa-fw"></i>'
 navWeight = 1000
 toc = false
 reward = true

@@ -4,6 +4,7 @@ linkTitle = "Alert"
 date = "2020-10-22"
 description = "A detailed description of Alert shortcode"
 featured = false
+draft = true
 categories = [
   "Shortcode"
 ]

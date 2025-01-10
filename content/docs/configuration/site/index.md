@@ -6,6 +6,7 @@ comment = true
 toc = true
 reward = true
 pinned = false
+draft = true
 categories = [
   "Configuration"
 ]

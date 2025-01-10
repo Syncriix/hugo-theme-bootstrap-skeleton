@@ -4,7 +4,7 @@ linkTitleIcon = '<i class="fas fa-bug fa-fw text-danger"></i>'
 date = 2022-03-19T13:46:41+08:00
 # description = "" # Used by description meta tag, summary will be used instead if not set or empty.
 featured = false
-draft = false
+draft = true
 comment = true
 toc = true
 reward = true
