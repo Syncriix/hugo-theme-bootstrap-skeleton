@@ -8,6 +8,8 @@ categories:
   - Installation
 tags:
   - Windows
+draft: true
+
 ---
 
 This guide show you how to install on Windows.

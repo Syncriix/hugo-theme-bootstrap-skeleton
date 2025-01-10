@@ -9,6 +9,8 @@ categories:
 tags:
   - Linux
   - Ubuntu
+draft: true
+
 ---
 
 This guide show you how to install on Ubuntu.

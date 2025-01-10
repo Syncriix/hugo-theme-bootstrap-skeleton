@@ -9,6 +9,8 @@ categories:
 tags:
   - Linux
   - Arch Linux
+
+draft: true
 ---
 
 This guide show you how to install on Arch Linux.
