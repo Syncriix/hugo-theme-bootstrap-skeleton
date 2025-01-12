@@ -8,7 +8,7 @@ HUGO_ENABLEGITINFO = "true"
 GO_VERSION = "1.17.7"
 
 [context.production]
-command = "npm install && npm install -g sass && hugo --minify"
+command = "npm install && hugo --minify"
 
 [context.production.environment]
 HUGO_ENV = "production"
