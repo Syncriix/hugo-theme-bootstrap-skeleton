@@ -1,6 +1,5 @@
 baseURL: /
 title: Evil 2 the Core
-theme: hugo-theme-bootstrap
 copyright: 'Copyright © 1995-{year} Syncriix. All Rights Reserved.'
 defaultContentLanguage: en
 # hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
@@ -39,15 +38,17 @@ build:
 enableGitInfo: true
 repo.url: https://github.com/Syncriix/hugo-theme-bootstrap-skeleton
 
+outputs:
+  home: ["HTML", "RSS"]
+
+security:
+  funcs:
+    getenv: ['^HUGO_', '^CI$', 'PWD']
+
 
 permalinks:
   news: /news/:year/:month/:title/
   blog: /blog/:year/:month/:title/
-
-module:
-  imports:
-    - path: github.com/syncriix/hugo-theme-bootstrap
-#   proxy: https://goproxy.cn
 
 # services:
 #   disqus:

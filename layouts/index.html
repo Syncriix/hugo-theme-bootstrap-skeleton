@@ -1,0 +1,31 @@
+{{ define "content" }}
+<div class="row text-center hero bg-image">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white mask">
+      <div class="TextGlitch" id="title">
+        <div class="TextGlitch-clip">
+          <div class="TextGlitch-word"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendA"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendB"></div>
+        </div>
+        <div class="TextGlitch-clip">
+          <div class="TextGlitch-word"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendA"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendB"></div>
+        </div>
+        <div class="TextGlitch-clip">
+          <div class="TextGlitch-word"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendA"></div>
+          <div class="TextGlitch-word TextGlitch-blend TextGlitch-blendB"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tape"></div>
+<video preload="auto" class="video" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/err.mp4" autoplay muted loop></video>
+<div class="{{ if default true .Params.sidebar }}col-xxl-8{{ else }}col-xxl-12{{ end }}">
+  {{ partial "list" . }}
+</div>
+{{- partial "sidebar" . -}}
+{{ end }}
